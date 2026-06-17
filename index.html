@@ -258,6 +258,50 @@ body.dark .bar-container::after {
             font-weight: bold;
         }
 
+        .project-tech {
+            display: block;
+            margin: 4px 0 10px 0;
+            color: #555;
+        }
+
+        body.dark .project-tech {
+            color: #aaa;
+        }
+
+        .project-links {
+            margin-top: 10px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 6px;
+            padding: 5px 12px;
+            border: 1px solid #FEBA01;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .project-links a:hover {
+            background-color: #FEBA01;
+            color: #000;
+        }
+
+        .other-projects-list li {
+            margin: 8px 0;
+        }
+
+        .other-projects-list a {
+            font-weight: bold;
+            border-bottom: 1px dashed #FEBA01;
+        }
+
+        .other-projects-list a:hover {
+            color: #FEBA01;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -351,42 +395,106 @@ Passionate about combining technology and creativity, I’m eager to contribute 
         <!-- Projects Section -->
         <div class="card" id="projects">
             <h2>Projects</h2><hr><br>
-                <li class="list-item;" >
-                   <strong>SMART ATTENDANCE SYSTEM</strong>
-                   <i><p><u>Python, Qt5-framework, MySQL | May 2023 - July 2023</p></i></u> <br>
-                    <li> It takes the Attendance of the Students by code scanning method, and it generates the QR code of every Student.</li>
 
-                    <li>It automatically stores the attendance values in the MySQL Database </li>
+            <li class="list-item">
+                <strong>The Aussie Outfit – MERN Microservices E-Commerce Platform</strong>
+                <i><span class="project-tech">React.js, Node.js, Express.js, MongoDB, API Gateway, Microservices, Vercel | 2026</span></i>
+                <ul>
+                    <li>Architected a full e-commerce platform as 10+ independently deployable microservices — User, Product, Cart, Order, Payment, Review, Notification, Admin, and Authentication — coordinated through a custom Node.js/Express API Gateway.</li>
+                    <li>Built the React.js storefront frontend covering product browsing, cart, checkout, and customer profile flows, consuming the gateway-routed REST APIs.</li>
+                    <li>Each service has its own MongoDB data layer and is deployed independently on Vercel, simulating a production-style distributed backend.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/pradyumna106-ship-it/the-aussie-outfit-frontend" target="_blank">Frontend Repo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/the-aussie-outfit-api-gateway" target="_blank">API Gateway Repo</a>
+                    <a href="https://the-aussie-outfit-user-service.vercel.app" target="_blank">User Service Live</a>
+                </div>
+            </li><br><hr><hr><hr>
 
-                        <li>Every student's Images of their face are stored as labelled data. Students have to show their faces to the scanner, and the system notes down their attendance</li>
-                        <li>This Application is capable of detecting the face, i.e., it can detect if the attendance is being marked in real-time</li>
-                </li><br><hr><hr><hr>
-                <li class="list-item">
-                    <strong>Vetra Sales – e-Commerce Website</strong>
-                    <p>
-                        <i><u>HTML, CSS, JavaScript, React.js, REST APIs, Git, Node.js | July 2024 – Sep 2024</u></i>
-                    </p>
-                    <ul>
-                        <li><strong>Spring Batch Framework:</strong> Implemented batch processing for automated data handling.</li>
-                        <li><strong>Scheduling:</strong> Integrated batch job execution with RESTful calls triggered via file uploads.</li>
-                        <li><strong>Readers and Writers:</strong> Configured item readers to load data from files/databases and item writers to store processed results.</li>
-                        <li><strong>Module:</strong> Worked on multiple modules such as Login/Signup, Cart-view, User Profile, Product Listing, Forms, API Integration, and Responsive UI Components using React.js and JavaScript.</li>
-                        <li><strong>Responsibilities:</strong> Desktop Application Development | Full Stack Developer (Final Year Project).</li>
-                    </ul>
-                    </ul>
-                    </li><br> <hr><hr><hr>
-                <li class="list-item">
-                    <strong>Meal Meat</strong>
-                    <p>
-                        <i><u>Python, Django, HTML, CSS, JavaScript, SQLite/MySQL, Git | Jan 2024 – Aug 2024</u></i>
-                    </p>
-                    <ul>
-                        <li><strong>Module Development:</strong> Built core modules including User Authentication, Dashboard, Forms Handling, Admin Panel, and Database Operations.</li>
-                        <li><strong>Frontend & UI:</strong> Developed responsive and user-friendly interfaces using Django templates, HTML, CSS, and JavaScript.</li>
-                        <li><strong>Full Stack Responsibilities:</strong> Designed database models, implemented CRUD operations, managed routing, and integrated backend with UI components.</li>
-                    </ul>
-                </li>
-            </ul>
+            <li class="list-item">
+                <strong>LibraryHub – Full Stack Library Management System</strong>
+                <i><span class="project-tech">React.js, Node.js, Express.js, Vercel | 2026</span></i>
+                <ul>
+                    <li>Built a complete library management system with separate frontend and backend services for book inventory, member records, and lending operations.</li>
+                    <li>Designed REST APIs for catalog search, borrow/return tracking, and member management.</li>
+                    <li>Deployed both frontend and backend independently on Vercel.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://library-hub-frontend-theta.vercel.app" target="_blank">Live Demo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/LibraryHub-frontend" target="_blank">Frontend Repo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/LibraryHub-backend" target="_blank">Backend Repo</a>
+                </div>
+            </li><br><hr><hr><hr>
+
+            <li class="list-item">
+                <strong>VetraSales – e-Commerce Website</strong>
+                <i><span class="project-tech">HTML, CSS, JavaScript, React.js, Java (Spring Batch), REST APIs, Git | Jul 2024 – Feb 2026</span></i>
+                <ul>
+                    <li><strong>Spring Batch Framework:</strong> Implemented batch processing for automated data handling.</li>
+                    <li><strong>Scheduling:</strong> Integrated batch job execution with RESTful calls triggered via file uploads.</li>
+                    <li><strong>Readers and Writers:</strong> Configured item readers to load data from files/databases and item writers to store processed results.</li>
+                    <li><strong>Modules:</strong> Login/Signup, Cart, User Profile, Product Listing, Forms, API Integration, and Responsive UI Components, plus dedicated payment and notification microservices.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://vetra-sales-front-end.vercel.app" target="_blank">Live Demo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/VetraSales---FrontEnd" target="_blank">Frontend Repo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/vetrasales-backend" target="_blank">Backend Repo</a>
+                </div>
+            </li><br><hr><hr><hr>
+
+            <li class="list-item">
+                <strong>Smart Attendance System</strong>
+                <i><span class="project-tech">Python, Qt5, OpenCV, Dlib, MySQL | 2023 – 2024</span></i>
+                <ul>
+                    <li>Takes student attendance via QR code scanning, generating a unique QR code for every student.</li>
+                    <li>Automatically stores attendance records in a MySQL database.</li>
+                    <li>Stores each student's face as labelled data for a face-recognition based real-time attendance mode (v2).</li>
+                    <li>Capable of detecting and verifying faces in real time before marking attendance.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/pradyumna106-ship-it/SmartAttendenceSystem" target="_blank">QR Code Version Repo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/Smart-Attendance-System-version-2.0-Using-Face-Recognition" target="_blank">Face Recognition v2 Repo</a>
+                </div>
+            </li><br><hr><hr><hr>
+
+            <li class="list-item">
+                <strong>Employee Management System</strong>
+                <i><span class="project-tech">Java, Spring Boot, MySQL, Railway | 2025 – 2026</span></i>
+                <ul>
+                    <li>Backend system for managing employee records with full CRUD operations.</li>
+                    <li>Built with Spring Boot REST APIs and a MySQL persistence layer.</li>
+                    <li>Deployed and hosted on Railway.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://employee-management-system-production-9022.up.railway.app" target="_blank">Live Demo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/Employee-Management-System" target="_blank">Repo</a>
+                </div>
+            </li><br><hr><hr><hr>
+
+            <li class="list-item">
+                <strong>TaskBuddy</strong>
+                <i><span class="project-tech">JavaScript, React.js, Netlify | 2025</span></i>
+                <ul>
+                    <li>A task management web app for tracking, organizing, and prioritizing daily tasks.</li>
+                    <li>Deployed and live on Netlify.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://jpradyumna-taskbuddy.netlify.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/pradyumna106-ship-it/TaskBuddy" target="_blank">Repo</a>
+                </div>
+            </li><br><hr><hr><hr>
+
+            <li class="list-item">
+                <strong>Other Notable Projects</strong>
+                <ul class="other-projects-list">
+                    <li><a href="https://weather-app-theta-brown-28.vercel.app" target="_blank">Weather App</a> &amp; <a href="https://weather-api-seven-amber.vercel.app" target="_blank">Weather API</a> — React frontend with a Java backend service, both deployed on Vercel.</li>
+                    <li><a href="https://github.com/pradyumna106-ship-it/kafka-producer-consumer" target="_blank">Kafka Producer-Consumer</a> — Event streaming pipeline built with Apache Kafka and JavaScript.</li>
+                    <li><a href="https://github.com/pradyumna106-ship-it/Big-data-spark-mysql-operation" target="_blank">Big Data: Spark + MySQL Operations</a>, <a href="https://github.com/pradyumna106-ship-it/Big-data-weather-hot-and-cold" target="_blank">Weather Hot &amp; Cold Analysis</a>, and <a href="https://github.com/pradyumna106-ship-it/Big-data-artist-rise-and-fall" target="_blank">Artist Rise &amp; Fall</a> — PySpark-based data engineering mini-projects.</li>
+                    <li><a href="https://github.com/pradyumna106-ship-it/todo-list-with-spring-security" target="_blank">To-Do List with Spring Security</a> — Java/Spring Boot app with authenticated CRUD task management.</li>
+                    <li><a href="https://github.com/pradyumna106-ship-it/quotes-webscrap-by-selenium-using-python" target="_blank">Quotes Web Scraper</a> &amp; <a href="https://github.com/pradyumna106-ship-it/wikipage-webscrap" target="_blank">Wikipedia Scraper</a> — Python/Selenium-based web scraping projects.</li>
+                    <li><a href="https://github.com/pradyumna106-ship-it/OTP-Sender" target="_blank">OTP Sender</a> &amp; <a href="https://github.com/pradyumna106-ship-it/Blogging-backend" target="_blank">Blogging Backend</a> — Java and Python backend utilities.</li>
+                </ul>
+            </li>
         </div>
         
         <!-- Education Section -->
